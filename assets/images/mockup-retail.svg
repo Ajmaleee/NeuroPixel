@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="560" height="360">
+  <rect width="560" height="360" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="560" height="72" fill="#F7F6F2"/>
+  <rect x="40" y="24" width="140" height="24" fill="#171815"/>
+  <rect x="440" y="28" width="28" height="16" fill="#3659E3"/>
+  <rect x="40" y="108" width="480" height="140" fill="#ECEBE5"/>
+  <rect x="40" y="260" width="160" height="72" fill="#F7F6F2" stroke="#DADAD2" stroke-width="1"/>
+  <rect x="216" y="260" width="160" height="72" fill="#F7F6F2" stroke="#DADAD2" stroke-width="1"/>
+  <rect x="392" y="260" width="128" height="72" fill="#F7F6F2" stroke="#DADAD2" stroke-width="1"/>
+  <rect x="40" y="340" width="200" height="4" fill="#DADAD2"/>
+  <rect x="300" y="300" width="220" height="36" fill="#3659E3"/>
+  <text x="316" y="322" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Enquire on WhatsApp</text>
+</svg>
