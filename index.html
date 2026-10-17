@@ -1,277 +1,668 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuroPixel — Independent Web Studio, Palakkad, Kerala</title>
-  <meta name="description" content="NeuroPixel is an independent web design and development studio based in Palakkad, Kerala. We build thoughtful, fast, modern websites for local businesses.">
-  <meta name="language" content="English, Malayalam">
+  <title>NeuroPixel — Website Design & Development, Palakkad, Kerala</title>
+  <meta name="description" content="NeuroPixel is an independent web design and development studio in Palakkad, Kerala. We build fast, modern websites for local businesses.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <script type="module" src="/assets/js/translations.js"></script>
-  <script type="module" src="/assets/js/main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
 
-  <header class="site-header" id="site-header">
+  <!-- HEADER -->
+  <header class="site-header">
     <div class="header-inner">
-      <a class="wordmark" href="/" aria-label="NeuroPixel homepage">
-        <span class="symbol" aria-hidden="true">N</span>
-        <span class="text">Neuro<span class="accent">Pixel</span></span>
+      <a href="/" class="brand" aria-label="NeuroPixel home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">NeuroPixel</span>
       </a>
-
-      <nav class="main-nav" id="main-nav">
+      <nav class="nav" aria-label="Primary">
         <ul class="nav-list">
-          <li><a class="nav-link" href="#work" data-i18n="nav.work">Work</a></li>
-          <li><a class="nav-link" href="#services" data-i18n="nav.services">Services</a></li>
-          <li><a class="nav-link" href="#process" data-i18n="nav.process">Process</a></li>
-          <li><a class="nav-link" href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-          <li><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
-          <li><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </nav>
-
       <div class="header-actions">
-        <button class="lang-toggle" id="lang-toggle" aria-pressed="false">
-          <span class="lang-label">EN</span>
-          <span class="lang-divider">|</span>
-          <span class="lang-target" dir="auto">മലയാളം</span>
-        </button>
-        <a class="btn btn-primary" href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." data-i18n="nav.start" rel="noopener">Start a project</a>
-        <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
-          <span class="menu-icon" aria-hidden="true"></span>
+        <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." rel="noopener" class="btn btn-dark header-cta">Start a project</a>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
         </button>
       </div>
     </div>
   </header>
 
-  <nav class="mobile-menu" id="mobile-menu" hidden>
-    <ul class="mobile-nav-list">
-      <li><a class="mobile-nav-link" href="#work" data-i18n="nav.work">Work</a></li>
-      <li><a class="mobile-nav-link" href="#services" data-i18n="nav.services">Services</a></li>
-      <li><a class="mobile-nav-link" href="#process" data-i18n="nav.process">Process</a></li>
-      <li><a class="mobile-nav-link" href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
-      <li><a class="mobile-nav-link" href="#about" data-i18n="nav.about">About</a></li>
-      <li><a class="mobile-nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
-      <li class="mobile-cta">
-        <a class="btn btn-primary mobile-whatsapp" href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." rel="noopener" data-i18n="nav.start">Start a project</a>
-      </li>
-    </ul>
-  </nav>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <ul class="mobile-nav-list">
+        <li><a href="#work" class="mobile-nav-link">Work</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#process" class="mobile-nav-link">Process</a></li>
+        <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." rel="noopener" class="btn btn-cobalt mobile-menu-cta">Start a project</a>
+  </div>
 
   <main id="content">
-    <section class="hero" id="hero" aria-labelledby="hero-heading">
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <p class="hero-eyebrow" data-i18n="hero.eyebrow">INDEPENDENT WEB STUDIO · PALAKKAD, KERALA</p>
-          <h1 class="hero-headline" id="hero-heading" data-i18n="hero.headline">Good businesses deserve better websites.</h1>
-          <p class="hero-subhead" data-i18n="hero.subhead">NeuroPixel designs and builds thoughtful, fast, modern websites that help businesses make a stronger impression online.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary hero-cta" href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." rel="noopener" data-i18n="hero.primary">Let's build your website</a>
-            <a class="btn btn-outline" href="#work" data-i18n="hero.secondary">Explore our work</a>
-          </div>
-          <p class="hero-detail" data-i18n="hero.detail">Thoughtful design. Clean development. Real-world usefulness.</p>
-          <p class="hero-location" data-i18n="hero.location">Palakkad, Kerala, India</p>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <img src="/assets/images/mockup-restaurant.svg" alt="Concept preview: Local restaurant website" class="hero-mockup" width="420" height="320" loading="lazy">
-          <img src="/assets/images/mockup-retail.svg" alt="Concept preview: Retail product catalogue" class="hero-mockup hero-mockup--offset" width="340" height="260" loading="lazy">
-        </div>
-      </div>
-    </section>
 
-    <section class="section section-work" id="work" aria-labelledby="work-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-heading" id="work-heading" data-i18n="work.heading">Selected Work</h2>
-          <p class="section-subhead" data-i18n="work.subhead">A curated sample of websites designed and built by NeuroPixel. Concept projects are labelled as such.</p>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-meta">
+          <span class="eyebrow">Independent web studio</span>
+          <span class="eyebrow-location">Palakkad, Kerala</span>
         </div>
-        <div class="work-grid" id="work-grid">
-          <!-- Projects injected by JS -->
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-services" id="services" aria-labelledby="services-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-heading" id="services-heading" data-i18n="services.heading">Services</h2>
-          <p class="section-subhead" data-i18n="services.subhead">Website design and development for businesses in Palakkad, Kerala, and beyond.</p>
-        </div>
-        <div class="services-list" id="services-list">
-          <!-- Services injected by JS -->
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-why" id="why" aria-labelledby="why-heading">
-      <div class="container">
-        <div class="why-grid">
-          <div class="why-copy">
-            <h2 class="section-heading" id="why-heading" data-i18n="why.heading">A website should do more than exist.</h2>
-            <p class="section-subhead" data-i18n="why.subhead">It should explain what you offer, make your business look credible, and give customers a clear next step.</p>
-          </div>
-          <div class="why-list" id="why-list">
-            <!-- Items injected by JS -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-process" id="process" aria-labelledby="process-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-heading" id="process-heading" data-i18n="process.heading">Working Process</h2>
-          <p class="section-subhead" data-i18n="process.subhead">A simple four-stage process from first conversation to a live website. Timelines depend on scope, content readiness, and revisions.</p>
-        </div>
-        <div class="process-timeline" id="process-timeline">
-          <!-- Steps injected by JS -->
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-pricing" id="pricing" aria-labelledby="pricing-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-heading" id="pricing-heading" data-i18n="pricing.heading">Transparent Pricing</h2>
-          <p class="section-subhead" data-i18n="pricing.subhead">Three packages for different stages of business growth. Exact prices depend on your project scope. Contact NeuroPixel for a clear quote.</p>
-        </div>
-        <p class="pricing-note" id="pricing-note" data-i18n="pricing.note">Pricing depends on your project scope. Contact NeuroPixel for a clear quote.</p>
-        <div class="pricing-grid" id="pricing-grid">
-          <!-- Packages injected by JS -->
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-about" id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-copy">
-            <h2 class="section-heading" id="about-heading" data-i18n="about.heading">Small studio. Serious attention to detail.</h2>
-            <p class="section-subhead" data-i18n="about.subhead">NeuroPixel is an independent web development studio based in Palakkad, Kerala, focused on building thoughtful websites for businesses that want a stronger online presence.</p>
-          </div>
-          <div class="about-list" id="about-list">
-            <!-- Items injected by JS -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-faq" id="faq" aria-labelledby="faq-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-heading" id="faq-heading" data-i18n="faq.heading">Frequently Asked Questions</h2>
-          <p class="section-subhead" data-i18n="faq.subhead">Common questions about working with NeuroPixel on your website project.</p>
-        </div>
-        <div class="faq-list" id="faq-list">
-          <!-- FAQ items injected by JS -->
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-contact" id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-copy">
-            <h2 class="section-heading" id="contact-heading" data-i18n="contact.heading">Have a business in mind? Let's build something good.</h2>
-            <p class="section-subhead" data-i18n="contact.subhead">Tell me a little about your business and what you need. We'll discuss a practical direction for your website.</p>
-            <div class="contact-quick">
-              <a class="contact-item" href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." rel="noopener">
-                <span class="contact-label" data-i18n="contact.whatsapp">WhatsApp</span>
-                <span class="contact-value">919495050785</span>
-              </a>
-              <a class="contact-item" href="mailto:ajmalsworkshop@gmail.com">
-                <span class="contact-label" data-i18n="contact.email">Email</span>
-                <span class="contact-value">ajmalsworkshop@gmail.com</span>
-              </a>
-              <a class="contact-item" href="https://maps.google.com/?q=Palakkad%2C%20Kerala%2C%20India" rel="noopener">
-                <span class="contact-label" data-i18n="contact.location">Palakkad, Kerala, India</span>
-                <span class="contact-value">Open in Maps</span>
-              </a>
+        <div class="hero-body">
+          <h1 class="hero-headline">Good businesses<br>deserve better<br>websites.</h1>
+          <div class="hero-bottom">
+            <p class="hero-desc">NeuroPixel designs and builds thoughtful, fast, modern websites that help businesses make a stronger impression online.</p>
+            <div class="hero-actions">
+              <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." rel="noopener" class="btn btn-cobalt">Let's build your website</a>
+              <a href="#work" class="btn btn-outline">Explore our work</a>
             </div>
           </div>
-          <div class="contact-form-wrap">
-            <form class="enquiry-form" id="enquiry-form" novalidate>
-              <h3 class="form-title" id="form-title" data-i18n="contact.form.title">Project Enquiry</h3>
-              <p class="form-note" id="form-note" data-i18n="contact.subhead">Tell me a little about your business and what you need.</p>
-              <div class="form-group">
-                <label for="form-name" data-i18n="contact.form.name">Your name</label>
-                <input type="text" id="form-name" name="name" required minlength="2" maxlength="100" aria-required="true">
-                <span class="field-error" id="error-name" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label for="form-business" data-i18n="contact.form.business">Business name</label>
-                <input type="text" id="form-business" name="business" maxlength="150">
-                <span class="field-error" id="error-business" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label for="form-type" data-i18n="contact.form.type">Type of website or service</label>
-                <select id="form-type" name="type">
-                  <option value="business-website" data-i18n-opt="services.items.0.title">Business website</option>
-                  <option value="landing-page" data-i18n-opt="services.items.1.title">Landing page</option>
-                  <option value="product-catalogue" data-i18n-opt="services.items.2.title">Product catalogue</option>
-                  <option value="website-management" data-i18n-opt="services.items.3.title">Website management</option>
-                  <option value="website-security" data-i18n-opt="services.items.4.title">Website security</option>
-                  <option value="custom-development" data-i18n-opt="services.items.5.title">Custom web development</option>
-                  <option value="other">Other</option>
-                </select>
-                <span class="field-error" id="error-type" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label for="form-message" data-i18n="contact.form.message">Brief project description</label>
-                <textarea id="form-message" name="message" required minlength="10" maxlength="1000" rows="4" aria-required="true"></textarea>
-                <span class="field-error" id="error-message" aria-live="polite"></span>
-              </div>
-              <div class="form-group form-group--inline">
-                <fieldset>
-                  <legend class="field-legend" data-i18n="contact.form.contact">Preferred contact method</legend>
-                  <label class="radio-label">
-                    <input type="radio" name="contact" value="whatsapp" checked>
-                    <span data-i18n="contact.form.contact_options.0">WhatsApp</span>
-                  </label>
-                  <label class="radio-label">
-                    <input type="radio" name="contact" value="email">
-                    <span data-i18n="contact.form.contact_options.1">Email</span>
-                  </label>
-                </fieldset>
-                <span class="field-error" id="error-contact" aria-live="polite"></span>
-              </div>
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary" id="form-submit" data-i18n="contact.form.submit">Send enquiry via WhatsApp</button>
-                <a class="btn btn-outline form-email-alt" href="mailto:ajmalsworkshop@gmail.com?subject=Website%20Enquiry%20-%20NeuroPixel" data-i18n="contact.form.emailAlt">Or email directly</a>
-              </div>
-              <div class="form-message" id="form-message-output" role="status" aria-live="polite"></div>
-            </form>
+        </div>
+      </div>
+      <div class="hero-footer">
+        <p class="hero-detail">Thoughtful design. Clean development. Real-world usefulness.</p>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-mockup hero-mockup-1">
+            <img src="/assets/images/mockup-restaurant.svg" alt="" width="420" height="270">
+          </div>
+          <div class="hero-mockup hero-mockup-2">
+            <img src="/assets/images/mockup-retail.svg" alt="" width="340" height="220">
           </div>
         </div>
       </div>
     </section>
+
+    <!-- SELECTED WORK -->
+    <section class="section" id="work">
+      <div class="section-rule"></div>
+      <div class="section-label"><span class="section-num">01</span> Selected Work</div>
+      <div class="section-intro">
+        <h2 class="section-title">Projects that show<br>what's possible.</h2>
+        <p class="section-desc">A curated selection of website concepts designed and built by NeuroPixel. Each project is clearly labelled as concept work.</p>
+      </div>
+
+      <div class="work-list">
+        <!-- Project 01 -->
+        <article class="work-item">
+          <div class="work-item-visual">
+            <img src="/assets/images/mockup-restaurant.svg" alt="Malabar Spice House restaurant website concept preview" width="640" height="400" loading="lazy">
+          </div>
+          <div class="work-item-info">
+            <div class="work-item-meta">
+              <span class="work-badge">Concept project</span>
+              <span class="work-index">01 / 04</span>
+            </div>
+            <h3 class="work-item-title">Malabar Spice House</h3>
+            <div class="work-item-tags">
+              <span>Restaurant</span>
+              <span class="tag-sep" aria-hidden="true">·</span>
+              <span>Business website</span>
+            </div>
+            <p class="work-item-desc">A restaurant website with a full menu, opening hours, location map, and WhatsApp table-booking enquiry.</p>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="work-item work-item--reverse">
+          <div class="work-item-visual">
+            <img src="/assets/images/mockup-retail.svg" alt="Kerala Electronics product catalogue concept preview" width="640" height="400" loading="lazy">
+          </div>
+          <div class="work-item-info">
+            <div class="work-item-meta">
+              <span class="work-badge">Concept project</span>
+              <span class="work-index">02 / 04</span>
+            </div>
+            <h3 class="work-item-title">Kerala Electronics</h3>
+            <div class="work-item-tags">
+              <span>Retail</span>
+              <span class="tag-sep" aria-hidden="true">·</span>
+              <span>Product catalogue</span>
+            </div>
+            <p class="work-item-desc">A product catalogue for a local electronics store, with categories, specifications, and WhatsApp enquiry per product.</p>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="work-item">
+          <div class="work-item-visual">
+            <img src="/assets/images/mockup-clinic.svg" alt="Palakkad Dental Clinic website concept preview" width="640" height="400" loading="lazy">
+          </div>
+          <div class="work-item-info">
+            <div class="work-item-meta">
+              <span class="work-badge">Concept project</span>
+              <span class="work-index">03 / 04</span>
+            </div>
+            <h3 class="work-item-title">Palakkad Dental Clinic</h3>
+            <div class="work-item-tags">
+              <span>Healthcare</span>
+              <span class="tag-sep" aria-hidden="true">·</span>
+              <span>Professional services</span>
+            </div>
+            <p class="work-item-desc">A clean, trustworthy clinic website with services, patient information, appointment booking, and contact details.</p>
+          </div>
+        </article>
+
+        <!-- Project 04 -->
+        <article class="work-item work-item--reverse">
+          <div class="work-item-visual">
+            <img src="/assets/images/mockup-cafe.svg" alt="The Roasted Bean café website concept preview" width="640" height="400" loading="lazy">
+          </div>
+          <div class="work-item-info">
+            <div class="work-item-meta">
+              <span class="work-badge">Concept project</span>
+              <span class="work-index">04 / 04</span>
+            </div>
+            <h3 class="work-item-title">The Roasted Bean</h3>
+            <div class="work-item-tags">
+              <span>Café</span>
+              <span class="tag-sep" aria-hidden="true">·</span>
+              <span>Boutique website</span>
+            </div>
+            <p class="work-item-desc">A visually distinctive café website with a seasonal menu, story section, and location details.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="section-rule"></div>
+      <div class="section-label"><span class="section-num">02</span> Services</div>
+      <div class="section-intro">
+        <h2 class="section-title">What I build<br>for businesses.</h2>
+        <p class="section-desc">Website design and development for businesses in Palakkad, Kerala, and beyond.</p>
+      </div>
+
+      <div class="service-list">
+        <div class="service-row">
+          <span class="service-num">01</span>
+          <div class="service-body">
+            <h3>Business Websites</h3>
+            <p>Professional websites that explain what your business does, showcase your services, and make it easy for customers to contact you.</p>
+            <span class="service-for">For shops, clinics, restaurants, and local service providers</span>
+          </div>
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27d%20like%20to%20discuss%20a%20business%20website." rel="noopener" class="service-link">Enquire →</a>
+        </div>
+
+        <div class="service-row">
+          <span class="service-num">02</span>
+          <div class="service-body">
+            <h3>Landing Pages</h3>
+            <p>Focused pages for specific services, campaigns, promotions, and business goals.</p>
+            <span class="service-for">For product launches, offers, and campaign landing pages</span>
+          </div>
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27d%20like%20to%20enquire%20about%20a%20landing%20page." rel="noopener" class="service-link">Enquire →</a>
+        </div>
+
+        <div class="service-row">
+          <span class="service-num">03</span>
+          <div class="service-body">
+            <h3>Product Catalogues</h3>
+            <p>Organized online catalogues that help customers browse your products and enquire about availability.</p>
+            <span class="service-for">For retailers, boutiques, and stores with product ranges</span>
+          </div>
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27d%20like%20to%20enquire%20about%20a%20product%20catalogue." rel="noopener" class="service-link">Enquire →</a>
+        </div>
+
+        <div class="service-row">
+          <span class="service-num">04</span>
+          <div class="service-body">
+            <h3>Website Management</h3>
+            <p>Keep your website updated with agreed content changes, maintenance, improvements, and ongoing technical care. Exact scope depends on the maintenance agreement.</p>
+            <span class="service-for">For businesses that want a reliable website without managing it themselves</span>
+          </div>
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27d%20like%20to%20enquire%20about%20website%20management." rel="noopener" class="service-link">Enquire →</a>
+        </div>
+
+        <div class="service-row">
+          <span class="service-num">05</span>
+          <div class="service-body">
+            <h3>Website Security</h3>
+            <p>Practical website security measures, including secure configuration, HTTPS where applicable, dependency updates, and protection against common risks.</p>
+            <span class="service-for">For websites that handle customer data and online enquiries</span>
+          </div>
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27d%20like%20to%20enquire%20about%20website%20security." rel="noopener" class="service-link">Enquire →</a>
+        </div>
+
+        <div class="service-row">
+          <span class="service-num">06</span>
+          <div class="service-body">
+            <h3>Custom Web Development</h3>
+            <p>Additional functionality and tailored improvements based on the actual needs of your business.</p>
+            <span class="service-for">For businesses needing features beyond standard packages</span>
+          </div>
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27d%20like%20to%20enquire%20about%20custom%20web%20development." rel="noopener" class="service-link">Enquire →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section" id="why">
+      <div class="section-rule"></div>
+      <div class="why-grid">
+        <div class="why-left">
+          <div class="section-label"><span class="section-num">03</span> Why NeuroPixel</div>
+          <h2 class="section-title">A website should<br>do more than exist.</h2>
+          <p class="section-desc">It should explain what you offer, make your business look credible, and give customers a clear next step.</p>
+        </div>
+        <div class="why-right">
+          <div class="why-item">
+            <span class="why-index">01</span>
+            <div>
+              <h3>Design tailored to the business</h3>
+              <p>Every website is designed around your business, your customers, and your goals.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-index">02</span>
+            <div>
+              <h3>Direct communication</h3>
+              <p>You work directly with the developer building your website — not an account manager.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-index">03</span>
+            <div>
+              <h3>Mobile-first development</h3>
+              <p>Websites are built for phones first, then desktops, so customers have a good experience everywhere.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-index">04</span>
+            <div>
+              <h3>Performance-conscious implementation</h3>
+              <p>Lightweight code, optimized images, and fast-loading pages help your website work well on any device.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-index">05</span>
+            <div>
+              <h3>Clear scope and pricing</h3>
+              <p>You know what is included and what it costs before work begins. No hidden charges.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-index">06</span>
+            <div>
+              <h3>Practical support after launch</h3>
+              <p>Updates, maintenance, and security help are available once your website is live.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="section-rule"></div>
+      <div class="section-label"><span class="section-num">04</span> Process</div>
+      <div class="section-intro">
+        <h2 class="section-title">Four steps from<br>first call to launch.</h2>
+        <p class="section-desc">Timelines depend on project scope, content readiness, and revisions. Every project is different.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="process-num">01</span>
+          <div class="process-line" aria-hidden="true"></div>
+          <h3>Discover</h3>
+          <p>Understand the business, audience, goals, content, and required features.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">02</span>
+          <div class="process-line" aria-hidden="true"></div>
+          <h3>Design</h3>
+          <p>Create a visual direction tailored to the business and its customers.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">03</span>
+          <div class="process-line" aria-hidden="true"></div>
+          <h3>Build</h3>
+          <p>Develop the website, implement functionality, and test it across screen sizes.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">04</span>
+          <div class="process-line" aria-hidden="true"></div>
+          <h3>Launch</h3>
+          <p>Publish the approved website, verify the deployment, and complete the handover.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="section-rule"></div>
+      <div class="section-label"><span class="section-num">05</span> Pricing</div>
+      <div class="section-intro">
+        <h2 class="section-title">Transparent pricing.<br>No surprises.</h2>
+        <p class="section-desc">Three packages for different stages of business growth. Pricing depends on your project scope — contact NeuroPixel for a clear quote.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="pricing-tier">01</span>
+            <h3>Essential</h3>
+          </div>
+          <p class="pricing-tagline">For businesses that need a professional online starting point.</p>
+          <ul class="pricing-features">
+            <li>A compact business website</li>
+            <li>Essential business information</li>
+            <li>Services or product overview</li>
+            <li>Mobile-responsive layout</li>
+            <li>WhatsApp contact integration</li>
+            <li>Basic on-page SEO</li>
+            <li>Performance and accessibility checks</li>
+          </ul>
+          <div class="pricing-price">Scope-based quote</div>
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27d%20like%20to%20know%20about%20your%20Essential%20website%20package." rel="noopener" class="btn btn-outline pricing-btn">Enquire about Essential</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-header">
+            <span class="pricing-tier">02</span>
+            <h3>Professional</h3>
+          </div>
+          <p class="pricing-tagline">For businesses that need a more distinctive and detailed website.</p>
+          <ul class="pricing-features">
+            <li>Custom visual direction</li>
+            <li>Additional pages or sections as agreed</li>
+            <li>Enhanced project-specific design</li>
+            <li>Contact form where appropriate</li>
+            <li>Expanded service or product information</li>
+            <li>Technical SEO fundamentals</li>
+            <li>Analytics integration if requested</li>
+          </ul>
+          <div class="pricing-price">Scope-based quote</div>
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27d%20like%20to%20know%20about%20your%20Professional%20website%20package." rel="noopener" class="btn btn-cobalt pricing-btn">Enquire about Professional</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="pricing-tier">03</span>
+            <h3>Custom</h3>
+          </div>
+          <p class="pricing-tagline">For businesses that need more specialized functionality.</p>
+          <ul class="pricing-features">
+            <li>Product catalogues</li>
+            <li>Custom interactive features</li>
+            <li>Additional integrations</li>
+            <li>Content migration</li>
+            <li>Specialized layouts</li>
+            <li>Ongoing maintenance options</li>
+            <li>More extensive technical requirements</li>
+          </ul>
+          <div class="pricing-price">Scope-based quote</div>
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27d%20like%20to%20know%20about%20your%20Custom%20website%20package." rel="noopener" class="btn btn-outline pricing-btn">Enquire about Custom</a>
+        </div>
+      </div>
+      <p class="pricing-note">Exact inclusions depend on the agreed scope. No ecommerce, payment processing, or unlimited revisions are implied — everything is discussed and confirmed before work begins.</p>
+      <div class="pricing-email">
+        <a href="mailto:ajmalsworkshop@gmail.com?subject=Pricing%20Enquiry" rel="noopener">Or email ajmalsworkshop@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-rule"></div>
+      <div class="why-grid">
+        <div class="why-left">
+          <div class="section-label"><span class="section-num">06</span> About</div>
+          <h2 class="section-title">Small studio.<br>Serious attention<br>to detail.</h2>
+        </div>
+        <div class="why-right about-right">
+          <p class="about-lead">NeuroPixel is an independent web development studio based in Palakkad, Kerala, focused on building thoughtful websites for businesses that want a stronger online presence.</p>
+          <div class="why-item">
+            <span class="why-index">01</span>
+            <div>
+              <h3>Direct working relationship</h3>
+              <p>You work directly with the developer. No account managers, no handoffs.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-index">02</span>
+            <div>
+              <h3>Attention to the specific business</h3>
+              <p>Every design and development decision is made for your business and your customers.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-index">03</span>
+            <div>
+              <h3>Practical solutions</h3>
+              <p>Usable, maintainable websites without unnecessary complexity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-rule"></div>
+      <div class="section-label"><span class="section-num">07</span> FAQ</div>
+      <div class="section-intro">
+        <h2 class="section-title">Common questions.</h2>
+        <p class="section-desc">Straightforward answers about working with NeuroPixel.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
+            <span>What kinds of businesses do you work with?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1" hidden>
+            <p>Local businesses of all kinds: shops, restaurants, cafés, clinics, retailers, professionals, and service providers.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+            <span>How much does a website cost?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden>
+            <p>Pricing depends on the project scope. Essential, Professional, and Custom packages are available. Contact NeuroPixel for a clear quote.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+            <span>How long does a website take?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden>
+            <p>Timelines depend on scope, content readiness, revisions, and project requirements. No guaranteed delivery dates.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+            <span>Will the website work on mobile?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden>
+            <p>Yes. Every website is built mobile-first and tested across screen sizes.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
+            <span>Can you update my existing website?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5" hidden>
+            <p>Yes. Website management and maintenance services include agreed content changes and improvements.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">
+            <span>Can you create a product catalogue?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6" hidden>
+            <p>Yes. Organized online catalogues help customers browse your products and enquire about availability.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a7" id="faq-q7">
+            <span>Do you provide website maintenance?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a7" role="region" aria-labelledby="faq-q7" hidden>
+            <p>Yes. Ongoing technical care, updates, and maintenance are available based on the agreed agreement.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a8" id="faq-q8">
+            <span>Can you help secure my website?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a8" role="region" aria-labelledby="faq-q8" hidden>
+            <p>Yes. Practical security measures including secure configuration, HTTPS where applicable, and protection against common risks. No system is completely immune to all threats.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a9" id="faq-q9">
+            <span>Will I own my website?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a9" role="region" aria-labelledby="faq-q9" hidden>
+            <p>Ownership of source code, domain, third-party assets, hosting, and ongoing services should be agreed upon before work begins.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a10" id="faq-q10">
+            <span>How do I get started?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a10" role="region" aria-labelledby="faq-q10" hidden>
+            <p>Send a WhatsApp message or fill in the contact form. Tell me about your business and what you need.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-dark" id="contact">
+      <div class="section-label section-label--light"><span class="section-num">08</span> Contact</div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="section-title section-title--light">Have a business<br>in mind? Let's<br>build something<br>good.</h2>
+          <p class="contact-lead">Tell me a little about your business and what you need. We'll discuss a practical direction for your website.</p>
+          <div class="contact-channels">
+            <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." rel="noopener" class="contact-channel">
+              <span class="contact-channel-label">WhatsApp</span>
+              <span class="contact-channel-value">+91 94950 50785</span>
+            </a>
+            <a href="mailto:ajmalsworkshop@gmail.com" class="contact-channel">
+              <span class="contact-channel-label">Email</span>
+              <span class="contact-channel-value">ajmalsworkshop@gmail.com</span>
+            </a>
+            <div class="contact-channel contact-channel--static">
+              <span class="contact-channel-label">Location</span>
+              <span class="contact-channel-value">Palakkad, Kerala, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">Your name <span class="required">*</span></label>
+                <input type="text" id="cf-name" name="name" required maxlength="100" autocomplete="name">
+                <span class="form-error" id="err-name" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="cf-business">Business name</label>
+                <input type="text" id="cf-business" name="business" maxlength="150" autocomplete="organization">
+                <span class="form-error" id="err-business" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-type">Type of website or service</label>
+              <select id="cf-type" name="type">
+                <option value="business-website">Business website</option>
+                <option value="landing-page">Landing page</option>
+                <option value="product-catalogue">Product catalogue</option>
+                <option value="website-management">Website management</option>
+                <option value="website-security">Website security</option>
+                <option value="custom-development">Custom web development</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-message">Brief project description <span class="required">*</span></label>
+              <textarea id="cf-message" name="message" required minlength="10" maxlength="1000" rows="5" placeholder="Tell me about your business and what you need."></textarea>
+              <span class="form-error" id="err-message" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <span class="form-label-text">Preferred contact method</span>
+              <div class="form-radio-group">
+                <label class="form-radio">
+                  <input type="radio" name="contact" value="whatsapp" checked>
+                  <span>WhatsApp</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="contact" value="email">
+                  <span>Email</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-cobalt btn-full">Send enquiry via WhatsApp</button>
+              <a href="mailto:ajmalsworkshop@gmail.com?subject=Website%20Enquiry%20-%20NeuroPixel" rel="noopener" class="form-email-link">Or email ajmalsworkshop@gmail.com directly</a>
+            </div>
+
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="wordmark wordmark--small">
-          <span class="symbol" aria-hidden="true">N</span>
-          <span class="text">Neuro<span class="accent">Pixel</span></span>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="/" class="brand brand--footer">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">NeuroPixel</span>
+        </a>
+        <p class="footer-desc">Independent web design and development studio based in Palakkad, Kerala, India.</p>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." rel="noopener">WhatsApp</a>
+          <a href="mailto:ajmalsworkshop@gmail.com">Email</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
         </div>
-        <p class="footer-desc" data-i18n="footer.desc">Independent web design and development studio based in Palakkad, Kerala, India.</p>
-      </div>
-      <div class="footer-contact">
-        <h3 class="footer-heading" data-i18n="footer.contact">Contact</h3>
-        <ul class="footer-links">
-          <li><a class="footer-link" href="https://wa.me/919495050785?text=Hi%20NeuroPixel%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business." rel="noopener" data-i18n="footer.whatsapp">WhatsApp</a></li>
-          <li><a class="footer-link" href="mailto:ajmalsworkshop@gmail.com" data-i18n="footer.email">Email</a></li>
-        </ul>
-      </div>
-      <div class="footer-note">
-        <p class="footer-rights" data-i18n="footer.rights">All rights reserved.</p>
+        <p class="footer-copy">&copy; 2026 NeuroPixel. All rights reserved.</p>
       </div>
     </div>
   </footer>
+
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

@@ -7,8 +7,7 @@ Independent web design and development studio based in Palakkad, Kerala, India.
 ```
 index.html                 # Main single-page website
 assets/css/styles.css      # All styles (custom properties, no framework)
-assets/js/main.js          # Vanilla JS: i18n, mobile menu, FAQ, contact form
-assets/js/translations.js  # EN / ML translation dictionary
+assets/js/main.js          # Vanilla JS: mobile menu, FAQ, contact form → WhatsApp
 assets/images/             # Project mockup SVGs
 favicon.svg                # Site favicon
 robots.txt                 # Search engine directives
@@ -35,17 +34,16 @@ This is a static HTML/CSS/JS site. No build step is required.
    npx http-server .
    ```
 
-3. Or simply open `index.html` directly in a browser. Some features (ES modules) may require a local server rather than `file://`.
+3. Or simply open `index.html` directly in a browser.
 
 ## How to test
 
 - Open `index.html` and verify all navigation links scroll to the correct sections.
-- Test the language toggle (EN / മലയാളം) — all visible text should switch.
 - Open the mobile menu, navigate, press Escape to close.
 - Click every WhatsApp CTA — it should open `https://wa.me/919495050785` with the correct prefilled message.
 - Click every email link — it should open `mailto:ajmalsworkshop@gmail.com`.
 - Fill in and submit the contact form — it should open WhatsApp with your details.
-- Test FAQ accordion with keyboard (Tab, Enter/Space) and Escape.
+- Test FAQ accordion with keyboard (Tab, Enter/Space).
 - Resize the browser from 320 px to 1920 px and check for overflow or overlap.
 - Open browser DevTools → Console — no errors should appear.
 
@@ -68,22 +66,17 @@ No build command or output directory configuration is necessary because all asse
 ### Contact details
 - WhatsApp number: `919495050785` (used in `wa.me` links throughout `index.html` and `assets/js/main.js`).
 - Email: `ajmalsworkshop@gmail.com`.
-- Both appear in `index.html` and `main.js` (`whatsappBase` constant).
+- Both appear in `index.html` and `main.js` (`WA_BASE` constant).
 
 ### Prices and packages
-- Edit package definitions in `assets/js/translations.js` under `pricing.packages`.
-- Add actual INR prices to the `desc` field when ready. The note `Pricing depends on your project scope...` shows until prices are added.
+- Edit package cards directly in `index.html` under the Pricing section.
+- Add actual INR prices when ready. The note `Pricing depends on your project scope...` shows until prices are added.
 
 ### Portfolio projects
-- Add or edit projects in `assets/js/translations.js` under `work.items`.
-- Each item needs: `title`, `category`, `type`, `desc`, `image`, `alt`, and `concept: true` for concept work.
+- Edit project items directly in `index.html` under the Work section.
+- Each item: title, tags, description, image, and the `Concept project` badge.
 - Place preview images in `assets/images/`.
-- Only add a real `url` for genuine deployed projects; concept projects should not have a `url`.
-
-### Translations
-- Edit `assets/js/translations.js`. Keys under `en` and `ml` mirror each other.
-- Every translatable element in `index.html` uses `data-i18n="key.path"`.
-- Switching language updates `document.lang`, all `data-i18n` text, select options, and WhatsApp prefill messages.
+- Only add a real link for genuine deployed projects; concept projects have no link.
 
 ## Accessibility
 
